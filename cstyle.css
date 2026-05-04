@@ -1,0 +1,151 @@
+/* Configurações Globais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-image: url('imagens/CeMEPIcapa4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+  line-height: 1.5;
+}
+
+/* Faixa de Logos */
+.logo-container {
+  background-color: #154c56;
+  padding: 20px 0;
+}
+
+.logo-container div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-container img {
+  max-width: 80px;
+  height: auto;
+}
+
+/* Navbar Lateral */
+#navbar {
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  min-height: 100vh;
+  border-right: 2px solid #e0e0e0;
+}
+
+.nav-link {
+  color: #154c56;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.nav-link.active {
+  background-color: #e6f1fa; /* Destaque para aba ativa */
+}
+
+.nav-link:hover {
+  background-color: #d6eaff; /* Fundo hover */
+  color: #186d7f;
+}
+
+.nav-item .btn {
+  background-color: #154c56;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Conteúdo Principal */
+main {
+  padding: 40px;
+}
+
+main h2 {
+  color: #154c56;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #154c56;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer h5 {
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  font-size: 0.9em;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #9cb7c7;
+}
+
+footer p {
+  margin: 15px 0 0;
+}
+
+/* Ajustes Específicos */
+#navbar .nav-link:hover {
+  background-color: #9cb7c7;
+  color: #154c56;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.2em;
+}
+

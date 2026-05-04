@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CeMEPI - Início</title>
+  <!-- Importação do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Importação do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilização CSS inline -->
+  <link href="cstyle.css" rel="stylesheet">
+  <!-- Importação do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Link para Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    /* Navbar Lateral */
+    #sidebar {
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      border-right: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    #sidebar .nav-link {
+      color: #154c56;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 10px 15px;
+    }
+
+    #sidebar .nav-link:hover,
+    #sidebar .nav-link.active {
+      background-color: #154c56;
+      color: #fff;
+    }
+
+    /* Conteúdo Principal */
+    main {
+      padding: 40px;
+    }
+
+    main h2 {
+      color: #154c56;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    
+    /* Estilo para esconder/mostrar o menu no mobile */
+        @media (max-width: 992px) {
+          #sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #f5f5f5;
+            z-index: 1040;
+            transition: left 0.3s ease-in-out;
+          }
+        
+          #sidebar.navbar-mobile {
+            left: 0;
+          }
+        
+          .mobile-nav-toggle {
+            display: block;
+          }
+        }
+        
+        @media (min-width: 993px) {
+          .mobile-nav-toggle {
+            display: none;
+          }
+        }
+
+  </style>
+</head>
+
+
+<body>
+  <div id="header"></div>
+  
+    <!-- Estrutura Principal -->
+    <div class="container-fluid">
+    <div class="row">
+    <!-- Navbar Lateral -->
+    <nav id="sidebar" class="col-md-3 col-lg-2" style="background-color: #f8f9fa; border-right: 2px solid #e0e0e0; padding-top: 20px; min-height: 100vh;">
+  <ul class="nav flex-column">
+    <!-- Botão Entrar -->
+    <li class="nav-item text-center mb-4">
+      <a href="login.html" style="background-color: #154c56; color: #fff; padding: 10px 30px; border-radius: 20px; font-weight: bold; font-size: 1em; text-decoration: none; display: inline-block; transition: all 0.3s;">
+        Entrar
+      </a>
+    </li>
+    <!-- Menu de Navegação -->
+    <li class="nav-item">
+      <a class="nav-link active" href="cinicio.html" style="color: #154c56; font-weight: bold; padding: 12px 20px; border-radius: 5px; background-color: #e6f1fa; margin: 5px 0; text-align: center;">
+        O CeMEPI
+      </a>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-link" href="csobre.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Os CCDs
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cprojetos.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Projetos
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cequipe.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Equipe
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cpublicacoes.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Publicações
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ceventos.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Eventos
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ccontato.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Contato
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<style>
+  /* Estilo do hover */
+  #sidebar .nav-link:hover {
+    background-color: #d6eaff; /* Fundo azul claro no hover */
+    color: #186d7f; /* Texto em azul escuro no hover */
+    border-radius: 5px; /* Mantém as bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado no hover */
+  }
+</style>
+
+    <!-- Conteúdo Principal -->
+    <main class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <!-- Carrossel de Notificações -->
+        <div id="carouselNotifications" class="carousel slide" data-ride="carousel" style="max-width: 100%; margin: 0 auto;">
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselNotifications" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselNotifications" data-slide-to="1"></li>
+            <li data-target="#carouselNotifications" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Conteúdo do Carrossel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagens/capaGrupoCemepi.jpeg" class="d-block w-100" alt="Notificação 1" style="height: 400px; object-fit: cover;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Centro de Pesquisa associado à USP</h5>
+                <p>Parceria entre Universidade de São Paulo, FAPESP e Procuradoria Geral do Estado de São Paulo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/capajuri.png" class="d-block w-100" alt="Notificação 2" style="height: 400px; object-fit: cover;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Processos judiciais</h5>
+                <p>A estrutura do Centro é fundamentada na integração multidisciplinar entre ciência de dados, equipe jurídica e equipe de gestão.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/capadados2.png" class="d-block w-100" alt="Notificação 3" style="height: 400px; object-fit: cover;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pluralidade do conhecimento</h5>
+                <p>Compartilhar conhecimentos e divulgar os avanços obtidos por meio de congressos, eventos temáticos, artigos científicos e plataformas digitais.</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Controles -->
+          <a class="carousel-control-prev" href="#carouselNotifications" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselNotifications" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+        
+      <h2 class="font-weight-bold mt-4">Sobre o CeMEPI-PGE</h2>
+
+ 
+
+        <p><b>Centro Multidisciplinar de Estratégia, Pesquisa e Inovação da Procuradoria Geral do Estado de São Paulo</b></p>
+        <p>
+          O <b>CeMEPI-PGE</b> foi criado com a missão de enfrentar desafios estratégicos da administração pública, promovendo maior eficiência, redução de custos, ampliação do acesso à justiça e a formulação de <b>políticas públicas baseadas em evidências</b>.
+        </p>
+        <p>
+          O Centro atua de forma inovadora, integrando <b>pesquisas multidisciplinares</b> voltadas à gestão de processos judiciais sob responsabilidade da Procuradoria Geral do Estado de São Paulo. Seu foco está na modernização da administração pública, na redução de burocracias e na utilização de dados para construir soluções sustentáveis e duradouras.
+        </p>
+        <p><b>Estrutura Multidisciplinar</b></p>
+        <P>
+            A força do CeMEPI-PGE está na articulação entre três frentes de atuação:
+            <ul>
+                <li><b>Ciência de dados:</b> responsável pela coleta, organização e análise de grandes volumes de dados.</li>
+                <li><b>Equipe jurídica:</b> interpreta os dados à luz da legislação e propõe soluções com base em critérios jurídicos sólidos.</li>
+                <li><b>Gestão pública:</b> otimiza recursos e processos, assegurando viabilidade econômica e operacional das propostas.</li>
+            </ul>
+            Essa estrutura integrada permite desenvolver soluções eficazes e orientadas para resultados, com alto potencial de impacto social e institucional.
+        </P>
+        <p><b>Parcerias Estratégicas</b></p>
+        <p>O CeMEPI-PGE mantém <b>alianças com instituições acadêmicas, órgãos públicos e demais stakeholders,</b> formando redes de colaboração nacional e internacional. Essas parcerias ampliam a capacidade técnica do Centro, possibilitam a troca de conhecimentos e fortalecem a produção científica.</p>
+        <p>Os resultados e avanços do CeMEPI-PGE são divulgados por meio de <b>eventos temáticos, congressos, artigos científicos e plataformas digitais,</b> promovendo a transparência e o compartilhamento de boas práticas.</p>
+        <p><b>Impacto e Compromisso</b></p>
+        <p>Com suas iniciativas, o CeMEPI-PGE contribui diretamente para:
+            <ul>
+                <li><b>Mitigar ineficiências</b> nos processos judiciais;</li>
+                <li><b>Reduzir custos operacionais</b> e simplificar procedimentos;</li>
+                <li><b>Promover o acesso à justiça,</b> eliminando barreiras burocráticas;</li>
+                <li><b>Apoiar decisões informadas,</b> com base em evidências e dados estruturados.</li>
+            </ul>
+        Seu trabalho beneficia <b>cidadãos, empresas e instituições públicas,</b> reafirmando o compromisso da Procuradoria Geral do Estado de São Paulo com uma gestão pública mais moderna, justa e eficiente.</p>
+            <div style="text-align: center;">
+             <a href="Manual_CeMEPI_v2.pdf" target="_blank" style="
+                background-color: #186d7f;
+                color: white;
+                padding: 10px 20px;
+               text-decoration: none;
+               border-radius: 5px;">
+                Ver Manual
+             </a>
+            </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- Link para Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="cscripts.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const select = (el, all = false) => {
+      el = el.trim();
+      return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
+    };
+
+    const on = (type, el, listener, all = false) => {
+      const element = select(el, all);
+      if (element) {
+        if (all) element.forEach(e => e.addEventListener(type, listener));
+        else element.addEventListener(type, listener);
+      }
+    };
+
+    on('click', '.mobile-nav-toggle', function () {
+      const sidebar = select('#sidebar');
+      if (sidebar) {
+        sidebar.classList.toggle('navbar-mobile');
+        this.classList.toggle('bi-list');
+        this.classList.toggle('bi-x');
+        console.log('menu toggled');
+      } else {
+        console.warn('Sidebar não encontrado');
+      }
+    });
+  });
+</script>
+
+<script>
+  // Carrega o header dinamicamente
+fetch('cheader.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+
+    // Espera o conteúdo ser injetado e então registra o evento no botão
+    const toggleBtn = document.querySelector('.mobile-nav-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    if (toggleBtn && sidebar) {
+      // Alterna o menu ao clicar no botão
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('navbar-mobile');
+        toggleBtn.classList.toggle('bi-list');
+        toggleBtn.classList.toggle('bi-x');
+        console.log('menu toggled');
+      });
+
+      // Fecha o menu ao clicar fora da sidebar e fora do botão
+      document.addEventListener('click', (e) => {
+        const clickedInsideSidebar = sidebar.contains(e.target);
+        const clickedToggleBtn = toggleBtn.contains(e.target);
+        const isMobile = window.innerWidth <= 992;
+
+        if (
+          isMobile &&
+          sidebar.classList.contains('navbar-mobile') &&
+          !clickedInsideSidebar &&
+          !clickedToggleBtn
+        ) {
+          sidebar.classList.remove('navbar-mobile');
+          toggleBtn.classList.add('bi-list');
+          toggleBtn.classList.remove('bi-x');
+          console.log('menu fechado por clique fora');
+        }
+      });
+    } else {
+      console.warn('Botão ou sidebar não encontrado');
+    }
+  })
+  .catch(error => {
+    console.error('Erro ao carregar o header:', error);
+  });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CeMEPI - Publicações</title>
+  <!-- Importação do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Importação do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilização CSS inline -->
+  <link href="cstyle.css" rel="stylesheet">
+  <!-- Importação do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Link para Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    /* Navbar Lateral */
+    #sidebar {
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      border-right: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    #sidebar .nav-link {
+      color: #154c56;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 10px 15px;
+    }
+
+    #sidebar .nav-link:hover,
+    #sidebar .nav-link.active {
+      background-color: #154c56;
+      color: #fff;
+    }
+
+    /* Conteúdo Principal */
+    main {
+      padding: 40px;
+    }
+
+    main h2 {
+      color: #154c56;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* Estilo para esconder/mostrar o menu no mobile */
+        @media (max-width: 992px) {
+          #sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #f5f5f5;
+            z-index: 1040;
+            transition: left 0.3s ease-in-out;
+          }
+        
+          #sidebar.navbar-mobile {
+            left: 0;
+          }
+        
+          .mobile-nav-toggle {
+            display: block;
+          }
+        }
+        
+        @media (min-width: 993px) {
+          .mobile-nav-toggle {
+            display: none;
+          }
+        }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  
+    <!-- Estrutura Principal -->
+    <div class="container-fluid">
+    <div class="row">
+    <!-- Navbar Lateral -->
+    <nav id="sidebar" class="col-md-3 col-lg-2" style="background-color: #f8f9fa; border-right: 2px solid #e0e0e0; padding-top: 20px; min-height: 100vh;">
+  <ul class="nav flex-column">
+    <!-- Botão Entrar -->
+    <li class="nav-item text-center mb-4">
+      <a href="login.html" style="background-color: #154c56; color: #fff; padding: 10px 30px; border-radius: 20px; font-weight: bold; font-size: 1em; text-decoration: none; display: inline-block; transition: all 0.3s;">
+        Entrar
+      </a>
+    </li>
+    <!-- Menu de Navegação -->
+    <li class="nav-item">
+      <a class="nav-link" href="cinicio.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        O CeMEPI
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="csobre.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Os CCDs
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cprojetos.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Projetos
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cequipe.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Equipe
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="cpublicacoes.html" style="color: #154c56; font-weight: bold; padding: 12px 20px; border-radius: 5px; background-color: #e6f1fa; margin: 5px 0; text-align: center;">
+        Publicações
+      </a>
+    <li class="nav-item">
+      <a class="nav-link" href="ceventos.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Eventos
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ccontato.html" style="color: #154c56; padding: 12px 20px; border-radius: 5px; margin: 5px 0; text-align: center; transition: background 0.3s;">
+        Contato
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<style>
+  /* Estilo do hover */
+  #sidebar .nav-link:hover {
+    background-color: #d6eaff; /* Fundo azul claro no hover */
+    color: #186d7f; /* Texto em azul escuro no hover */
+    border-radius: 5px; /* Mantém as bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado no hover */
+  }
+</style>
+
+    <!-- Conteúdo Principal -->
+    <main class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+      <h2 class="font-weight-bold mt-4">Publicações</h2>
+      
+      <div class="container my-5">
+  <div class="p-4 bg-light rounded shadow-sm">
+    <h2 class="mb-3" style="color:#154c56; font-weight:bold;">
+      FEA-RP sedia o V Webinário Habeas Data e o I Webinário CeMEPI-PGE nos dias 10 e 11 de novembro de 2025
+    </h2>
+    <p class="text-muted mb-4"><em>Por Júlia Navarro Perioto</em></p>
+
+    <p>Nos dias 10 e 11 de novembro de 2025, a Faculdade de Economia, Administração e Contabilidade de Ribeirão Preto da Universidade de São Paulo sediou dois importantes eventos dedicados à interseção entre dados, tecnologia e gestão pública: o V Webinário Habeas Data e o I Webinário CeMEPI-PGE. Transmitidos ao vivo pelo YouTube, os encontros reuniram especialistas nacionais e internacionais que discutiram como a acessibilidade, a transparência e o uso estratégico de dados podem ampliar a inclusão, fortalecer a tomada de decisão e promover maior eficiência no sistema de justiça latino-americano.</p>
+
+    <h4 class="mt-4" style="color:#154c56;">V Webinário Habeas Data</h4>
+    <p>Em sua quinta edição, o Webinário do Habeas Data, grupo de pesquisa coordenado pela Profa. Dra. Luciana Romano Morilas e pelo Prof. Dr. Ildeberto Aparecido Rodello, concentrou-se na interseção entre dados, tecnologia e inclusão na justiça latino-americana.</p>
+    <p>O painel 1, “O uso de jurimetria e redes complexas para estimar a relevância de precedentes judiciais”, apresentou resultados de pesquisa de Juvenal Domingos Júnior (mestrando da UNICAMP e Assessor Especial de TI do Contencioso Fiscal Tributário da PGE/SP), orientado pelo Prof. Dr. João Roberto Bertini Júnior (UNICAMP). O estudo utiliza técnicas de análise de redes e métodos jurimétricos para mapear padrões de formação de precedentes, oferecendo ferramentas inovadoras para compreender coerência, repetitividade e impacto das decisões judiciais.</p>
+    <p>O painel 2, “Transformação digital da Justiça na América Latina: experiências comparadas”, contou com a mediação do Prof. Dr. Rafael de Freitas Souza (FEARP/USP) e reuniu Martina Nuccitelli (Gerente de Implementação de Inteligência Artificial da Procuración General da Ciudad Autónoma de Buenos Aires e líder em implementação de IA no setor público no Laboratório de Inovação e Inteligência Artificial da Universidade de Buenos Aires) e o Prof. Dr. Fabiano Hartman Peixoto (UnB), líder do grupo de pesquisa DR.IA.</p>
+    <p>A discussão abordou usos éticos e responsáveis de IA generativa na justiça e na administração pública. Martina Nuccitelli apresentou iniciativas da Procuración General de Buenos Aires no emprego de modelos generativos para apoiar a elaboração de peças em demandas repetitivas, destacando ganhos de eficiência e desafios de governança. O Prof. Dr. Fabiano Hartman Peixoto ressaltou que a adoção de IA no sistema de justiça exige critérios rigorosos de transparência, segurança e responsabilidade, garantindo que inovações tecnológicas sirvam ao interesse público sem comprometer direitos fundamentais.</p>
+    <p>Além dos painéis, houve a exposição de pôsteres de resultados de pesquisas concluídas no âmbito do grupo Habeas Data.</p>
+
+    <h4 class="mt-4" style="color:#154c56;">I Webinário CeMEPI</h4>
+    <p>O segundo dia marcou o início público do I Webinário do Centro Multidisciplinar de Estratégia, Pesquisa e Inovação da Procuradoria Geral do Estado de São Paulo (CeMEPI), primeira ocasião em que o Centro organizou e apresentou ao público suas agendas de pesquisa, debates e perspectivas de trabalho. Sediado na FEA-RP, o evento reuniu pesquisadores e integrantes da PGE-SP em torno de discussões sobre inovação, gestão pública e produção de conhecimento aplicado.</p>
+    <p>O Centro integra um dos Centros de Ciência para o Desenvolvimento, estruturas colaborativas apoiadas pela FAPESP que reúnem universidades, órgãos públicos, empresas e organizações da sociedade civil na produção de conhecimento orientado à solução de problemas concretos do Estado de São Paulo, com o objetivo de gerar resultados cientificamente robustos e institucionalmente aplicáveis, capazes de apoiar a formulação e o aprimoramento de políticas públicas. A FEA-RP foi selecionada para participar do convênio estabelecido entre a FAPESP e a Procuradoria Geral do Estado, e dessa parceria surgiu o CeMEPI-PGE, concebido como um espaço de confluência entre ciência, inovação e administração pública.</p>
+    <p>Com a participação de integrantes da PGE-SP, entre eles Rodrigo Curado, Coordenador dos Centros de Ciência para o Desenvolvimento da PGE-SP, Laís Rocha Portilho, Assessora na Procuradoria Geral do Estado de São Paulo, e Igor Moraes Rocha, também Assessor na PGE-SP, os debates enfatizaram a importância de aproximar pesquisa aplicada, formulação de política pública e atuação estatal, destacando o potencial das abordagens baseadas em evidências para qualificar a gestão pública. Ressaltou-se, ainda, a necessidade de consolidar uma cultura institucional orientada por dados, um processo ainda em construção no setor público, mas fundamental para decisões mais eficientes, transparentes e responsivas.</p>
+    <p>A segunda metade do webinário, mediada pelo Prof. Dr. Milton Barossi Filho, Chefe do Departamento de Economia da FEARP, contou com a participação dos representantes das equipes de Direito, Dados, Organização, Custos e Gestão do Conhecimento, respectivamente Profª Drª Luciana Morilas, Prof. Dr. Ildeberto Aparecido Rodello, Profª Drª Silvia Inês Dallavalle de Paula e Me Luiz Ricardo Brito Ribeiro, Dr. Maurílio Benite e Profª Drª Ieda Pelogia Martins Damian. Cada grupo apresentou tanto os resultados iniciais quanto os projetos em desenvolvimento. As exposições evidenciaram a robustez da agenda científica e institucional que o CeMEPI-PGE-SP pretende consolidar ao longo de sua atuação, incluindo pesquisas sobre dinâmicas processuais, modelagem de dados aplicada ao sistema de justiça, análises organizacionais, estudos de custos estatais e estratégias de gestão do conhecimento.</p>
+
+    <h4 class="mt-4" style="color:#154c56;">Impacto e Posicionamento da FEA-RP</h4>
+    <p>Os dois eventos, realizados de forma articulada, evidenciam um movimento consistente da FEA-RP em direção à consolidação de sua posição como referência nacional em pesquisa empírica sobre administração da justiça. A participação da Faculdade na estruturação de centros colaborativos e em projetos de grande porte, como os CCDs da FAPESP, demonstra o fortalecimento de iniciativas lideradas por seus professores que buscam conectar produção científica e transformação institucional. A escolha da unidade para compor um dos Centros de Ciência para o Desenvolvimento reforça esse papel e confirma a relevância crescente da pesquisa aplicada desenvolvida no campus de Ribeirão Preto no debate sobre inovação, gestão pública e justiça.
+</p>
+
+    <h5 class="mt-4">Links</h5>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=jXTK2l22gJE" target="_blank">V Webinário Habeas Data - Dados, Tecnologia e Inclusão na Justiça Latino-Americana</a></li>
+      <li><a href="https://www.youtube.com/watch?v=4lBQM_gKSTw" target="_blank">I Webinário CeMEPI - Ciência, Inovação e Estratégia para a Gestão Pública</a></li>
+    </ul>
+    <h5 class="mt-4">Galeria de Fotos</h5>
+        <div class="container my-4">
+  <div class="row text-center">
+    <div class="col-md-4 mb-3">
+      <img src="imagens/web1.jpeg" alt="Foto 1" class="img-fluid rounded">
+    </div>
+    <div class="col-md-4 mb-3">
+      <img src="imagens/web2.jpeg" alt="Foto 2" class="img-fluid rounded">
+    </div>
+    <div class="col-md-4 mb-3">
+      <img src="imagens/web3.jpeg" alt="Foto 3" class="img-fluid rounded">
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+    </main>
+  </div>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- Link para Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="cscripts.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const select = (el, all = false) => {
+      el = el.trim();
+      return all ? [...document.querySelectorAll(el)] : document.querySelector(el);
+    };
+
+    const on = (type, el, listener, all = false) => {
+      const element = select(el, all);
+      if (element) {
+        if (all) element.forEach(e => e.addEventListener(type, listener));
+        else element.addEventListener(type, listener);
+      }
+    };
+
+    on('click', '.mobile-nav-toggle', function () {
+      const sidebar = select('#sidebar');
+      if (sidebar) {
+        sidebar.classList.toggle('navbar-mobile');
+        this.classList.toggle('bi-list');
+        this.classList.toggle('bi-x');
+        console.log('menu toggled');
+      } else {
+        console.warn('Sidebar não encontrado');
+      }
+    });
+  });
+</script>
+
+<script>
+  // Carrega o header dinamicamente
+fetch('cheader.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+
+    // Espera o conteúdo ser injetado e então registra o evento no botão
+    const toggleBtn = document.querySelector('.mobile-nav-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    if (toggleBtn && sidebar) {
+      // Alterna o menu ao clicar no botão
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('navbar-mobile');
+        toggleBtn.classList.toggle('bi-list');
+        toggleBtn.classList.toggle('bi-x');
+        console.log('menu toggled');
+      });
+
+      // Fecha o menu ao clicar fora da sidebar e fora do botão
+      document.addEventListener('click', (e) => {
+        const clickedInsideSidebar = sidebar.contains(e.target);
+        const clickedToggleBtn = toggleBtn.contains(e.target);
+        const isMobile = window.innerWidth <= 992;
+
+        if (
+          isMobile &&
+          sidebar.classList.contains('navbar-mobile') &&
+          !clickedInsideSidebar &&
+          !clickedToggleBtn
+        ) {
+          sidebar.classList.remove('navbar-mobile');
+          toggleBtn.classList.add('bi-list');
+          toggleBtn.classList.remove('bi-x');
+          console.log('menu fechado por clique fora');
+        }
+      });
+    } else {
+      console.warn('Botão ou sidebar não encontrado');
+    }
+  })
+  .catch(error => {
+    console.error('Erro ao carregar o header:', error);
+  });
+
+</script>
+</body>
+</html>
